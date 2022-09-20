@@ -22,10 +22,11 @@ body {
     text-align: center;
     color: var(--clr-primary)
 }
-
+.container {
+    width: 100vw;
+}
 header {
     background: var(--clr-upper);
-    width: 100vw;
 }
 
 h1 {
@@ -86,7 +87,6 @@ input[type=number] {
 
 main {
     background: var(--clr-lower);
-    width: 100vw;
     padding: 2rem 0.8rem;
 }
 
@@ -109,4 +109,18 @@ h3 {
 p {
     font-size: 0.7rem;
     height: 1.5rem;
+}
+
+@media(min-width: 600px) {
+    body {
+        background-color: var(--clr-bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 500px;
+    }
 }
