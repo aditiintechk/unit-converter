@@ -25,10 +25,10 @@ convertBtn.addEventListener("click", function() {
     // Volume
     litreToGallon = (inputFromUser * 0.264).toFixed(3);
     GallonToLitre = (inputFromUser / 0.264).toFixed(3);
-    volumeEl.textContent = `${inputFromUser} meters = ${litreToGallon} feet | ${inputFromUser} feet = ${GallonToLitre} meters`;
+    volumeEl.textContent = `${inputFromUser} litres = ${litreToGallon} gallons | ${inputFromUser} gallons = ${GallonToLitre} litres`;
 
     // Mass
     KiloToPound = (inputFromUser * 2.204).toFixed(3);
     poundsToKilo = (inputFromUser / 2.204).toFixed(3);
-    massEl.textContent = `${inputFromUser} meters = ${KiloToPound} feet | ${inputFromUser} feet = ${poundsToKilo} meters`;
+    massEl.textContent = `${inputFromUser} kilos = ${KiloToPound} pounds | ${inputFromUser} pounds = ${poundsToKilo} kilos`;
 })
