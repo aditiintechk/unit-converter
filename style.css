@@ -6,15 +6,17 @@
     --clr-lower: #1F2937;
     --clr-primary: #FFF;
     --clr-secondary: #CCC1FF;
-    --clr-border: #B295FF;
+    --clr-border: #ccc;
     --clr-section: #273549;
     --clr-support-text: #FFF;
     --clr-button-text: #3D3D3D;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.2s ease;
 }
 
 body {
