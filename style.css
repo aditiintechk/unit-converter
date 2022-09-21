@@ -4,10 +4,12 @@
     --clr-bg: #1C1C1C;
     --clr-upper: #6943FF;
     --clr-lower: #1F2937;
-    --clr-primary: #fff;
+    --clr-primary: #FFF;
     --clr-secondary: #CCC1FF;
     --clr-border: #B295FF;
     --clr-section: #273549;
+    --clr-support-text: #FFF;
+    --clr-button-text: #3D3D3D;
 }
 * {
     margin: 0;
@@ -78,7 +80,7 @@ input[type=number] {
     font-family: inherit;
     font-weight: 500;
     font-size: 0.8rem;
-    color: #3D3D3D;
+    color: var(--clr-button-text);
 
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border: none;
@@ -101,7 +103,7 @@ section {
 
 h3 {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--clr-secondary);  
 
     padding-top: 1.5rem;
@@ -111,7 +113,13 @@ h3 {
 p {
     font-size: 0.7rem;
     height: 1.5rem;
+    color: var(--clr-support-text);
 }
+
+.theme-switch-wrapper {
+    display: none;
+}
+
 
 @media(min-width: 600px) {
     body {
@@ -125,4 +133,77 @@ p {
     .container {
         width: 500px;
     }
+
+/* from: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+
+
+    .theme-switch-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .theme-switch {
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        margin-bottom: 60px;
+        left: 88%;
+        bottom: 90%;
+        width: 60px;
+    }
+    
+    .theme-switch input {
+        display:none;
+    }
+    
+    .slider {
+        background-color: #273540;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 26px;
+    }
+    
+    input:checked + .slider {
+        background-color: #CCC;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    [data-theme="light"] {
+        --clr-bg: #1C1C1C;
+        --clr-upper: #5A537B;
+        --clr-lower: #F4F4F4;
+        --clr-primary: #FFF;
+        --clr-secondary: #5A537B;
+        --clr-border: #ccc;
+        --clr-section: #FFF;
+        --clr-support-text: #353535;
+        --clr-button-text: #3D3D3D;
+    }
+    
 }
