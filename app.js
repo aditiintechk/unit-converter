@@ -32,3 +32,18 @@ convertBtn.addEventListener("click", function() {
     poundsToKilo = (inputFromUser / 2.204).toFixed(3);
     massEl.textContent = `${inputFromUser} kilos = ${KiloToPound} pounds | ${inputFromUser} pounds = ${poundsToKilo} kilos`;
 })
+
+// setting the theme
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
