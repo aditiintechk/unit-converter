@@ -17,6 +17,14 @@ Light Theme
 
 ![](./screenshot-light-theme.JPG)
 
+## What did I Learn?
+
+- Template strings
+- .toFixed()
+- Theme Switch toggle
+- CSS Variables
+- CSS Animation
+
 ## Resources
 
 - [Scrimba - JavaScript Course](https://scrimba.com/learn/learnjavascript)
