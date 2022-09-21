@@ -5,11 +5,7 @@ Repo URL: [Unit Converter Code](https://github.com/Aditi002-holo/unit-converter)
 
 ## Unit Converter
 
-Inactive State
-
 ![](./screenshot.JPG)
-
-Active State
 
 ![](./screenshot-active-state.JPG)
 
