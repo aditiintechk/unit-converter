@@ -1,7 +1,7 @@
 # Scrimba Practice Project - Unit Converter
 
-Live URL: [Unit Converter](https://aditi002-holo.github.io/unit-converter/) <br/>
-Repo URL: [Unit Converter Code](https://github.com/Aditi002-holo/unit-converter)
+Live URL: [Unit Converter](https://aditiintechk.github.io/unit-converter/) <br/>
+Repo URL: [Unit Converter Code](https://github.com/aditiintechk/unit-converter)
 
 ## Unit Converter
 
